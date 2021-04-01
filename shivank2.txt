@@ -1,0 +1,18 @@
+def isEvenOrOdd( L, R ):
+ 
+    oddCount = (R - L )/2
+     
+    if( R % 2 == 1 or L % 2 == 1):
+        oddCount = oddCount + 1
+     
+    if(oddCount % 2 == 0 ):
+        return "Even"
+    else :
+        return "Odd"
+         
+ #Driver code
+ 
+L = int(input("enter value of L"))
+R = int(input("enter value of R"))
+ 
+print(isEvenOrOdd(L, R));
